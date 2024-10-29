@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int buscaBinaria(int vet[],int key){
+	int esq,dir,meio;
+	
+	while(esq <= dir){
+		meio = (esq+dir)/2;
+		if(key < vet[meio])
+			dir = meio+2;
+		else if (key > vet[meio])
+			esq = meio + 1;
+		else
+			return vet[meio];
+	}
+	return -1;
+}
+
+int main() {
+	int vet[] = 
+
+}
