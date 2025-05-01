@@ -1,0 +1,1 @@
+int busca_sequencial(int vet[], int key);
